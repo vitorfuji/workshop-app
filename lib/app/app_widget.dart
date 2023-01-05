@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:workshop_app/app/shared/utils.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // Modular.setInitialRoute("/forms/");
+    Modular.setInitialRoute(PodiPages.userPage());
 
     return GestureDetector(
       onTap: () => FocusScope.of(context).requestFocus(FocusNode()),
