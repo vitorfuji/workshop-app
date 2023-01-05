@@ -162,6 +162,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.6"
+  dotted_border:
+    dependency: transitive
+    description:
+      name: dotted_border
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0+3"
   dotted_line:
     dependency: "direct main"
     description:
@@ -169,6 +176,22 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.1.0"
+  ds_podi:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: main
+      resolved-ref: "1d3eefc6866297195e0a631fb8ff0ed9b9feca88"
+      url: "https://github.com/podiapp/ds_podi.git"
+    source: git
+    version: "0.0.1"
+  extended_masked_text:
+    dependency: transitive
+    description:
+      name: extended_masked_text
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.3.1"
   fake_async:
     dependency: transitive
     description:

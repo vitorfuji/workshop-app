@@ -14,6 +14,10 @@ dependencies:
   dotted_line: ^3.1.0
   flutter:
     sdk: flutter
+  ds_podi:
+    git:
+      url: https://github.com/podiapp/ds_podi.git
+      ref: main
   flutter_fortune_wheel:
     git:
       url: https://github.com/podiapp/flutter_fortune_wheel.git

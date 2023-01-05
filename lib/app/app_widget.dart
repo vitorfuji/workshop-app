@@ -21,7 +21,7 @@ class AppWidget extends StatelessWidget {
         ],
         supportedLocales: const [Locale('pt', 'BR')],
         title: 'Workshop Podi',
-        // theme: podiThemeData(context),
+        theme: podiThemeData(context),
         routerDelegate: Modular.routerDelegate,
         routeInformationParser: Modular.routeInformationParser,
       ),
