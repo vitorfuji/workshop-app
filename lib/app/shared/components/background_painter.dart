@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
+import '../utils.dart';
+
 class BackgroundPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      // ..color = PodiColors.white.withOpacity(0.1)
+      ..color = PodiColors.white.withOpacity(0.1)
       ..strokeWidth = 20
       ..style = PaintingStyle.stroke;
     canvas.drawCircle(

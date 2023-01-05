@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import '../utils.dart';
+
 class IndicatorPainter extends CustomPainter {
   final double radius;
 
@@ -10,7 +12,7 @@ class IndicatorPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final arcPaint = Paint()
-      // ..color = PodiColors.white
+      ..color = PodiColors.white
       ..style = PaintingStyle.stroke
       ..strokeWidth = 12;
 
@@ -24,7 +26,7 @@ class IndicatorPainter extends CustomPainter {
     canvas.drawPath(arc, arcPaint);
 
     final trianglePaint = Paint()
-      // ..color = PodiColors.white
+      ..color = PodiColors.white
       ..style = PaintingStyle.fill;
 
     const triangleSize = 32.0;
