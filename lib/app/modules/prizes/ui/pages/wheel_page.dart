@@ -62,26 +62,7 @@ class _WheelPageState extends State<WheelPage> {
           alignment: const Alignment(0, -0.625),
         ),
       ],
-      items: store.gifts
-          .map(
-            (e) => FortuneItem(
-              child: Text(
-                e.name,
-                style:
-                    PodiTexts.heading5.weightBold.withColor(PodiColors.white),
-              ),
-              style: FortuneItemStyle(
-                circleRatio: 0.4,
-                axis: Axis.horizontal,
-                color: PodiColors.purple,
-                borderWidth: 0,
-                gradient: LinearGradient(
-                  colors: [PodiColors.purple[300]!, PodiColors.purple[600]!],
-                ),
-              ),
-            ),
-          )
-          .toList(),
+      items: store.wheelItens,
     );
   }
 
