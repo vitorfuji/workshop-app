@@ -24,8 +24,12 @@ class _UserPageState extends State<UserPage> {
   @override
   void initState() {
     store.changeName(null);
-    wheelStore.fetchGifts();
+    pageFutures();
     super.initState();
+  }
+
+  Future<void> pageFutures() async {
+    await Future.wait([wheelStore.fetchGifts()]);
   }
 
   Widget _buildButton() {
@@ -33,6 +37,7 @@ class _UserPageState extends State<UserPage> {
       onTap: isValid
           ? () {
               Modular.to.pushReplacementNamed(PodiPages.questionPage());
+              wheelStore.fetchDraw();
             }
           : null,
       child: Container(

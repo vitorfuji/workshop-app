@@ -89,7 +89,10 @@ abstract class _WheelStoreBase with Store {
   @computed
   List<FortuneItem> get wheelItens {
     if (gifts.isEmpty) {
-      return [buildItem("😢\nNão foi desta vez!")];
+      return [
+        buildItem("😢\nNão foi desta vez!"),
+        buildItem("😢\nNão foi desta vez!"),
+      ];
     }
     return [
       ...gifts.map((e) => buildItem(e.name)),
